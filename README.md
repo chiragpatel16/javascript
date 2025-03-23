@@ -1,4 +1,4 @@
-Background Color Changer
+Background Color Changer - dom
 
 Overview
 This JavaScript project creates a simple background color changer that assigns a random color to the webpage each time a button is clicked. Additionally, the generated color code is displayed and is automatically copied to the clipboard.
