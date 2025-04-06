@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color:  black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: rgb(2, 2, 49);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 200px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-left: 10px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#countDisplay {
+  font-size: 3rem;
+  margin-top: 30px;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Countdown App</h1>
+    <input type="number" id="numberInput" placeholder="Enter a number" />
+    <button id="startBtn">Start Countdown</button>
+    <div id="countDisplay"></div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+  let countdown;
+  
+  $('#startBtn').click(function () {
+    clearInterval(countdown); // Clear previous countdown if any
+
+    let number = parseInt($('#numberInput').val());
+
+    if (isNaN(number) || number < 0) {
+      $('#countDisplay').text("Please enter a valid number.");
+      return;
+    }
+
+    $('#countDisplay').text(number);
+
+    countdown = setInterval(function () {
+      number--;
+      $('#countDisplay').text(number);
+
+      if (number <= 0) {
+        clearInterval(countdown);
+        $('#countDisplay').text("Time's up!");
+      }
+    }, 1000);
+  });
+});
+
+  </script>
+</body>
+</html>
