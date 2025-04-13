@@ -19,23 +19,9 @@ CSS
 
 JavaScript
 
-📸 Demo
-
-🚧 How to Use
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/toast-notification-app.git
-Open index.html in your browser.
-
 Click on any button to trigger a toast notification.
 
 📁 Project Structure
-pgsql
-Copy
-Edit
 toast-notification-app/
 │
 ├── index.html
