@@ -29,5 +29,7 @@ Open the index.html file in your browser.
 Start adding products to your cart!
 
 📸 Preview
+
+
 https://github.com/user-attachments/assets/f6092b23-aa7c-454d-bcb4-e6cfc5033774
 
