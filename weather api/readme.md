@@ -45,3 +45,5 @@ Open the index.html file in your browser
 Make sure you have an active API key if required and insert it into the JavaScript file
 
 Demo
+
+https://github.com/user-attachments/assets/a99cf423-3fe4-44fa-9147-f1e30ec0667a
